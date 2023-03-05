@@ -16,9 +16,9 @@
         <div class="side-bar">
             <div class="home left-block">
                 <h3>Home</h3>
-                <div class="today">Today</div>
-                <div class="week">This Week</div>
-                <div class="important">Important</div>
+                <div class="homeSelected">Today</div>
+                <div >Upcoming</div>
+                <div >Anytime</div>
             </div>
 
             <div class="projects left-block">
@@ -29,6 +29,33 @@
     
         <div class="content">
             <h2>TODAY</h2>
+
+            <div class="cards"></div>
+
+            <div id="addTask">
+                <button class="form-button">Add Task</button>
+            </div>
+
+            <div id="overlay">
+                <div id="add-task-form">
+                  <h2>Ajouter une tâche</h2>
+                  <form>
+                    <label for="title">Titre:</label>
+                    <input type="text" id="title" name="title" required>
+              
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+              
+                    <label for="due-date">Date d'échéance:</label>
+                    <input type="date" id="due-date" name="due-date">
+              
+                    <button class="form-button" type="submit" id="add-card-button">Ajouter</button>
+                    <button class="form-button" type="button" id="cancel-add-task">Annuler</button>
+                  </form>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
 
